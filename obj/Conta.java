@@ -1,8 +1,8 @@
 public class Conta{
-	double saldo = 2220;
-	int agencia ;
-	int numero;
-	Cliente titular;
+	private double saldo = 2220; //private somente metodos da class conta podem alterar esse atributo
+	private int agencia ;
+	private int numero;
+	private Cliente titular;
 
 
 	public boolean deposito(double valor){
@@ -33,7 +33,37 @@ public class Conta{
 			return false;
 		}
 	}	
+	
+	public void setTitular(String nome,String cpf,String profissao ){
+		this.titular = new Cliente();
+		this.titular.nome = nome;
+		this.titular.cpf = cpf;
+		this.titular.profissao = profissao;
+	}
 
+	public String getTitularNome(){
+		return this.titular.nome;
+	}
+	
+	public String getTitularCpf(){
+		return this.titular.cpf;
+	}
+	
+	public String getTitularProfissao(){
+		return this.titular.profissao;
+	}
+
+
+	public double getSaldo(){
+		return this.saldo;
+	}
+	public int getNumero(){
+		return this.numero;
+	}
+	
+	public void setNumero(int novoNumero){
+		this.numero = numero;
+	}
 
 
 }
