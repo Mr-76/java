@@ -5,9 +5,17 @@ public class Conta{
 	private Cliente titular;
 
 
+	public Conta(){
+		//rotina e inicializaçao
+
+	
+	}
+
 	public boolean deposito(double valor){
 		/* faz deposito na conta */
+		
 		this.saldo += valor;
+		
 		return true;
 	}
 
@@ -34,10 +42,25 @@ public class Conta{
 		}
 	}	
 	
-	public void setTitular(String nome,String cpf,String profissao ){
+	
+	public void setNumero(int novoNumero){
+		this.numero = numero;
+	}
+
+
+	public void setTitular(){
 		this.titular = new Cliente();
+	}
+	
+	public void setNome(String nome){
 		this.titular.nome = nome;
+	}
+	
+	public void setCpf(String cpf){
 		this.titular.cpf = cpf;
+	}
+
+	public void setProfissao(String profissao){
 		this.titular.profissao = profissao;
 	}
 
@@ -59,11 +82,5 @@ public class Conta{
 	}
 	public int getNumero(){
 		return this.numero;
-	}
-	
-	public void setNumero(int novoNumero){
-		this.numero = numero;
-	}
-
-
+	} 
 }

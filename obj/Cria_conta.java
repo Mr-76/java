@@ -4,21 +4,15 @@ public class Cria_conta{
 		Conta primeira_conta = new Conta();
 //		primeira_conta.titular = new Cliente();
 		
-		primeira_conta.setTitular("labrantolis","777.777.777-22","Estudante");
+		primeira_conta.setTitular();
 
+		primeira_conta.setNome("lebrantolis");
+		primeira_conta.setCpf("777.777.777-77");
+		primeira_conta.setProfissao("estudante");
+		
 		System.out.println(primeira_conta.getTitularNome());
 		System.out.println(primeira_conta.getTitularCpf());
 		System.out.println(primeira_conta.getTitularProfissao());
-		/*
-		primeira_conta.titular.nome = "labrantolis";
-		primeira_conta.titular.cpf = "777.777.777-22";
-		primeira_conta.titular.profissao = "Estudande :>";
-*/		
-/*
-		System.out.println(primeira_conta.titular.nome);
-		System.out.println(primeira_conta.titular.cpf);
-		System.out.println(primeira_conta.titular.profissao);
-*/		
 		
 		Conta conta2 = new Conta();
 
