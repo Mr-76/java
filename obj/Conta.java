@@ -5,10 +5,11 @@ public class Conta{
 	private Cliente titular;
 
 
-	public Conta(){
+	public Conta(int agencia,int numero){
 		//rotina e inicializaçao
+		this.agencia = agencia;
+		this.numero = numero;
 
-	
 	}
 
 	public boolean deposito(double valor){

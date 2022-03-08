@@ -1,9 +1,9 @@
 public class Cria_conta{
 	public static void main(String[] args){
 	
-		Conta primeira_conta = new Conta();
+		Conta primeira_conta = new Conta(2222,3333);
 //		primeira_conta.titular = new Cliente();
-		
+				
 		primeira_conta.setTitular();
 
 		primeira_conta.setNome("lebrantolis");
@@ -14,7 +14,7 @@ public class Cria_conta{
 		System.out.println(primeira_conta.getTitularCpf());
 		System.out.println(primeira_conta.getTitularProfissao());
 		
-		Conta conta2 = new Conta();
+		Conta conta2 = new Conta(4444,9999);
 
 		primeira_conta.transferencia(1000,primeira_conta);
 
