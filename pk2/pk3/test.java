@@ -1,4 +1,4 @@
-package pk2;
+package pk2.pk3;
 public class test{
    	private String fname = "John";
   	private String lname = "Doe";
